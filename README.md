@@ -9,7 +9,8 @@ to help you comprehend the search pattern it defines.
 We will be analazying the following regex
 ----- ^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$ -----
 This regex is designed to validate email addresses. 
-Throughout this tutorial, we'll break down each component, explaining its role in ensuring the correct format of an email address.
+Throughout this tutorial, we'll break down each component, 
+explaining its role in ensuring the correct format of an email address.
 
 
 ## Table of Contents
@@ -29,13 +30,17 @@ Throughout this tutorial, we'll break down each component, explaining its role i
 ## Regex Components
 
 ### Anchors
-Represented by ^ and $, Anchors encapsulate a line. In our email regex, ^ ensures the email starts with a valid sequence, and $ ensures it ends appropriately.
+Represented by ^ and $, Anchors encapsulate a line. In our email regex, ^ ensures the email starts with a valid sequence, 
+and $ ensures it ends appropriately.
 ### Quantifiers
-
+Quantifiers define the quantity of characters or groups to match.  + after a character class means one or more occuyrences of that class.
 ### OR Operator
+The OR operator, represented by |, allows for alternative matching. It helps define choices within the regex.
+example: ^(black|orange|blue|red)$ this means it matches black, orange, blue, or red
 
 ### Character Classes
-
+Character classes are denoted by square brackets [ ], and they define a set of characters to match. 
+In this regex they specify [a-zA-Z0-9_\-\.] as valid characters
 ### Flags
 
 ### Grouping and Capturing
