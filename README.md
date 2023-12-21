@@ -7,7 +7,7 @@ to help you comprehend the search pattern it defines.
 
 ## Summary
 We will be analazying the following regex
------ ^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$ -----
+----- /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/ -----
 This regex is designed to validate the correct format of email addresses. 
 Throughout this tutorial, we'll break down each component, 
 explaining its role in ensuring the correct format of an email address.
@@ -30,12 +30,12 @@ explaining its role in ensuring the correct format of an email address.
 
 ### Anchors
 Anchors mark the start and end of the regex. they ensure the email pattern is matched from the beggining to the end of the string. 
-Example:   ^([a-zA-Z0-9_\-\.]+)$
+Example:   /^([a-zA-Z0-9_\-\.]+)$/
 
 In this example ^ is beggining anchor and $ is ending anchor.
 ### Quantifiers
 Quantifiers define the quantity of characters or groups to match.  + after a character class means one or more occurences of that class.
-Example : ^([a-zA-Z0-9_\-\.]+)$
+Example : /^([a-zA-Z0-9_\-\.]+)$/
 
 ### OR Operator
 The "OR" operator, represented by |, allows for alternative matching. It helps define choices within the regex.
@@ -43,8 +43,8 @@ example: ^(black|orange|blue|red)$ this means it matches black, orange, blue, or
 
 ### Character Classes
 Character classes are denoted by square brackets [ ], and they define a set of characters to match. 
-In this regex they specify [a-zA-Z0-9_\-\.] as valid characters
-Example: ^[a-zA-Z0-9_\-\.]+$
+In this regex they specify /[a-zA-Z0-9_\-\.]/ as valid characters
+Example: /^[a-zA-Z0-9_\-\.]+$/
 
 ### Grouping and Capturing
 Groups, enclosed in parentheses, are used for capturing and grouping. 
