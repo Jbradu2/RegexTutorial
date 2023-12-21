@@ -8,7 +8,7 @@ to help you comprehend the search pattern it defines.
 ## Summary
 We will be analazying the following regex
 ----- ^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$ -----
-This regex is designed to validate email addresses. 
+This regex is designed to validate the correct format of email addresses. 
 Throughout this tutorial, we'll break down each component, 
 explaining its role in ensuring the correct format of an email address.
 
@@ -30,10 +30,14 @@ explaining its role in ensuring the correct format of an email address.
 ## Regex Components
 
 ### Anchors
-Represented by ^ and $, Anchors encapsulate a line. In our email regex, ^ ensures the email starts with a valid sequence, 
-and $ ensures it ends appropriately.
+Anchors mark the start and end of the regex. they ensure the email pattern is matched from the beggining to the end of the string. 
+Example:   ^([a-zA-Z0-9_\-\.]+)$
+
+In this example ^ is beggining anchor and $ is ending anchor.
 ### Quantifiers
-Quantifiers define the quantity of characters or groups to match.  + after a character class means one or more occuyrences of that class.
+Quantifiers define the quantity of characters or groups to match.  + after a character class means one or more occurences of that class.
+Example : ^([a-zA-Z0-9_\-\.]+)$
+
 ### OR Operator
 The OR operator, represented by |, allows for alternative matching. It helps define choices within the regex.
 example: ^(black|orange|blue|red)$ this means it matches black, orange, blue, or red
@@ -41,20 +45,24 @@ example: ^(black|orange|blue|red)$ this means it matches black, orange, blue, or
 ### Character Classes
 Character classes are denoted by square brackets [ ], and they define a set of characters to match. 
 In this regex they specify [a-zA-Z0-9_\-\.] as valid characters
-### Flags
+Example: ^[a-zA-Z0-9_\-\.]+$
 
 ### Grouping and Capturing
+Groups, enclosed in parentheses, are used for capturing and grouping. 
+They help in treating multiple characters as a single unit.
 
 ### Bracket Expressions
-
+Bracket expressions are another way to define character sets. 
+They are used to match a single character out of a group of characters
 ### Greedy and Lazy Match
-
+Greedy matching is the default behavior, attempting to match as much as possible. 
+Lazy matching, denoted by '?', matches as little as possible.
 ### Boundaries
-
+Boundaries, '\b', assert the position at the beginning or end of a word.
 ### Back-references
-
+Back-references, denoted by '\1', refer to a previously captured group.
 ### Look-ahead and Look-behind
-
+Look-ahead and look-behind assertions assert whether a certain pattern is ahead or behind the current position without including it in the match.
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+This tutorial was crafted by Joshua Bradshaw. Connect with me on GitHub @ github/Jbradu2 for more projects in the coding world.
