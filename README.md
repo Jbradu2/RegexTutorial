@@ -19,7 +19,6 @@ explaining its role in ensuring the correct format of an email address.
 - [Quantifiers](#quantifiers)
 - [OR Operator](#or-operator)
 - [Character Classes](#character-classes)
-- [Flags](#flags)
 - [Grouping and Capturing](#grouping-and-capturing)
 - [Bracket Expressions](#bracket-expressions)
 - [Greedy and Lazy Match](#greedy-and-lazy-match)
@@ -39,7 +38,7 @@ Quantifiers define the quantity of characters or groups to match.  + after a cha
 Example : ^([a-zA-Z0-9_\-\.]+)$
 
 ### OR Operator
-The OR operator, represented by |, allows for alternative matching. It helps define choices within the regex.
+The "OR" operator, represented by |, allows for alternative matching. It helps define choices within the regex.
 example: ^(black|orange|blue|red)$ this means it matches black, orange, blue, or red
 
 ### Character Classes
@@ -65,4 +64,4 @@ Back-references, denoted by '\1', refer to a previously captured group.
 Look-ahead and look-behind assertions assert whether a certain pattern is ahead or behind the current position without including it in the match.
 ## Author
 
-This tutorial was crafted by Joshua Bradshaw. Connect with me on GitHub @ github/Jbradu2 for more projects in the coding world.
+This tutorial was crafted by Joshua Bradshaw. Connect with me on GitHub @ https://github.com/Jbradu2 for more projects in the coding world.
